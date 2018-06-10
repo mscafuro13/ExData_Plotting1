@@ -17,8 +17,7 @@ powerConsumption$Global_active_power <- suppressWarnings(as.numeric(as.character
 png('plot2.png', width = 480, height = 480)
 
 #Create Chart
-with(powerConsumption, plot(Time, Global_active_power, xlab = "", ylab = "Global Active Power (kilowatts)", type = "n"))
-with(powerConsumption, lines(Time, Global_active_power))
+with(powerConsumption, plot(Time, Global_active_power, xlab = "", ylab = "Global Active Power (kilowatts)", type = "l"))
 
 #Close the device
 dev.off()

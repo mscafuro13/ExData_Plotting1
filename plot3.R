@@ -19,8 +19,7 @@ powerConsumption$Sub_metering_3 <- suppressWarnings(as.numeric(as.character(powe
 png('plot3.png', width = 480, height = 480)
 
 #Create Chart
-with(powerConsumption, plot(Time, Sub_metering_1, xlab = "", ylab = "Energy sub metering", type = "n"))
-with(powerConsumption, lines(Time, Sub_metering_1))
+with(powerConsumption, plot(Time, Sub_metering_1, xlab = "", ylab = "Energy sub metering", type = "l"))
 with(powerConsumption, lines(Time, Sub_metering_2, col = "Red"))
 with(powerConsumption, lines(Time, Sub_metering_3, col = "Blue"))
 
