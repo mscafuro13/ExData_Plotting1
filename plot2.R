@@ -14,7 +14,7 @@ powerConsumption$Time <- strptime(x = paste(powerConsumption$Date, powerConsumpt
 powerConsumption$Global_active_power <- suppressWarnings(as.numeric(as.character(powerConsumption$Global_active_power)))
 
 #Open PNG device
-png('plot2.png')
+png('plot2.png', width = 480, height = 480)
 
 #Create Chart
 with(powerConsumption, plot(Time, Global_active_power, xlab = "", ylab = "Global Active Power (kilowatts)", type = "n"))
